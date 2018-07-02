@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/imgflow.js"></script>
+    <style>
+    body {
+        margin: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <img src="image/demo.png" width="220">
+        <img src="image/demo.png" width="220">
+        <img src="image/demo.png" width="220">
+        <img src="image/demo.png" width="220">
+        <img src="image/demo.png" width="220">
+    </div>
+</body>
+<script>
+imgFlow.run({
+    dom: "#content",//dom选择器
+    domwidth: 1000,//dom宽度
+    speed: 2000,//运行速度
+    offset: 120,//偏移量
+    spacing: 50//间距
+});
+</script>
+</html>
